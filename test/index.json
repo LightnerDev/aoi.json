@@ -1,0 +1,55 @@
+{
+    "bot": {
+        "token": "ENV_TOKEN",
+        "prefix": "aoijson/",
+        "intents": "all"
+    },
+    "variables": {
+        "variable1name": "variable1dvalue",
+        "variable2name": "variable2dvalue",
+        "variable3name": "variable3dvalue",
+        "variable4name": "variable4dvalue",
+        "variable5name": "variable5dvalue"
+    },
+    "statuses": [
+        {
+            "type": "PLAYING",
+            "text": "Getting Coded",
+            "time": 12
+        }
+    ],
+    "callbacks": [
+        "Message",
+        "InteractionCreate"
+    ],
+    "commands": [
+        {
+            "type": "default",
+            "name": "test",
+            "code": "$randomText[HELLO;HI;HEY;SUP]"
+        },
+        {
+            "type": "default",
+            "name": "mltest",
+            "code": [
+                "$randomText[HELLO;HI;HEY;SUP]",
+                "This Code Is Multiline",
+                "EPIC RIGHT?"
+            ]
+        },
+        {
+            "type": "awaited",
+            "name": "await1",
+            "code": [
+                "HELLO"
+            ]
+        },
+        {
+            "type": "default",
+            "name": "awaitedCMD",
+            "code": [
+                "$loop[3;{};await1]"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@lightner/aoi.json",
+  "version": "1.0.0",
+  "description": "A package that allows you to code in JSON that compiles to aoi.js",
+  "bin": {
+    "aoi.json": "bin/cli.js"
+  },
+  "scripts": {
+    "compile": "./bin/cli.js compile ./test/index.json",
+    "run": "./bin/cli.js run ./test/index.json"
+  },
+  "keywords": [
+    "aoijs",
+    "json"
+  ],
+  "author": "Lightner",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "commander": "^9.0.0"
+  },
+  "devDependencies": {
+    "aoi.js": "^5.0.8",
+    "dotenv": "^16.0.0"
+  },
+  "files": [
+    "./bin/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightnerDev/aoi.json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LightnerDev/aoi.json/issues"
+  },
+  "homepage": "https://aoi-json.lightner.ml/"
+}
